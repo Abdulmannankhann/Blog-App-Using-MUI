@@ -32,6 +32,7 @@ const ResponsiveAppBar = ({ isAuth, signUserOut }) => {
       } else if (e === "Home") {
         navigate("/");
       } else if (e === "Logout") {
+        navigate("/");
         signUserOut();
       }
     }
@@ -40,7 +41,7 @@ const ResponsiveAppBar = ({ isAuth, signUserOut }) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="appbar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
